@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- metod http 
+    1.) GET => meminta data biasa digunakan untuk pencarian. ex : seaching,sorting, filtering 
+    2.) POST => mengirim data biasa digunakan untuk submit\mengirimkna data ex: login, register, edit profile
+    -->
+    <form action="./about.html" method="get">
+      <input type="text" name="query" id="" />
+      <button>button</button>
+    </form>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+      <input type="text" name="title" />
+      <input type="text" name="body" />
+      <input type="number" name="userId" />
+      <button>button</button>
+    </form>
+    <form action="">
+      <h1>form login</h1>
+      <!-- (label + input) *2 -->
+      <label for="email" hidden>email</label>
+      <input type="text" id="email" placeholder="input email" />
+      <label for="password" hidden>password</label>
+      <input type="password" id="password" placeholder="input password" />
+    </form>
+    <form action="">
+      <h1>profile</h1>
+      <label for="name">Name</label>
+      <input type="text" id="name" />
+      <br />
+      <label>gender</label>
+      <br />
+      <br />
+      <input type="radio" id="male" value="male" name="gender" />
+      <label for="male">male</label>
+      <br />
+      <input type="radio" id="female" value="female" name="gender" />
+      <label for="female">female</label>
+      <br />
+      <label>hobbies</label>
+      <br />
+      <input type="checkbox" name="hooby" id="hobby-reading" /><label
+        for="hobby-reading"
+        >Reading</label
+      >
+      <input type="checkbox" name="hooby" id="hobby-hiking" /><label
+        for="hobby-hiking"
+        >Hiking</label
+      >
+      <input type="checkbox" name="hooby" id="hobby-gaming" /><label
+        for="hobby-gaming"
+        >Gaming</label
+      >
+      <input type="checkbox" name="hooby" id="hobby-other" /><label
+        for="hobby-other"
+        >Other</label
+      >
+      <br />
+      <label for="profile-city">city</label>
+      <select name="city" id="profile-city">
+        <option value="default" hidden>Pilih domisili anda</option>
+        <option value="jakarta">Jakarta</option>
+        <option value="bandung">Bandung</option>
+        <option value="bali">Bali</option>
+        <option value="lombok">Lombok</option>
+      </select>
+      <label for="profile-description">Deskripsi</label>
+      <br />
+      <textarea
+        name="desription"
+        id="profile-description"
+        placeholder="my description"
+        style="max-width: 50%; max-height: 200px"
+      ></textarea>
+      <br />
+      <button type="submit">edit profile</button>
+    </form>
+  </body>
+</html>

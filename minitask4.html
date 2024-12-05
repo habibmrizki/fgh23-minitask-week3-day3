@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Perokok</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>Survey Perokok</h1>
+      <!-- Pertanyaan nama -->
+      <label for="name">Name</label>
+      <input type="text" id="name" />
+      <br />
+      <br />
+      <!-- Pertanyaan umur -->
+      <label for="age">Age</label>
+      <input type="number" id="age" />
+      <br />
+      <br />
+      <!-- Pertanyaan gender -->
+      <label>Gender</label>
+      <br />
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="" />
+      <label for="female">Female</label>
+      <br />
+      <br />
+      <!-- Pertanyaan merokok atau tidaknya -->
+      <label>Are you a smoker?</label>
+      <br />
+      <input type="radio" name="filter" id="yes" />
+      <label for="yes">Yes</label>
+      <input type="radio" name="filter" id="no" />
+      <label for="no">No</label>
+      <!-- Pertanyaan jenis rokok -->
+      <br />
+      <br />
+      <label>Jika anda perokok, jenis rokok apa yang anda gunakan?</label>
+      <br />
+      <input type="checkbox" name="cigar" id="Malboro" /><label for="Malboro"
+        >Malboro</label
+      >
+      <input type="checkbox" name="cigar" id="Camel" /><label for="Camel"
+        >Camel</label
+      >
+      <input type="checkbox" name="cigar" id="76" /><label for="76">76</label>
+      <input type="checkbox" name="cigar" id="Esse" /><label for="Esse"
+        >Esse</label
+      >
+      <br />
+      <br />
+      <!-- Deskiripsi -->
+      <label for="description">Description</label>
+      <br />
+      <textarea
+        rows="2"
+        cols="50"
+        name="description"
+        id="description"
+        placeholder="My description"
+      ></textarea>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
